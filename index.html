@@ -20,7 +20,7 @@
 </head>
 <body>
 <h1>Futamado サポート</h1>
-<p>Futamado（フタマド）は、写真を扱う人のための macOS 用 2画面ファイルマネージャです。左右にフォルダを並べてキーボードだけでファイルを整理でき、画像の上で Enter を押せばそのまま全画面ビューワーで確認できます。</p>
+<p>Futamado（フタマド）は、写真を扱う人のための 2画面ファイルマネージャです（Mac / iPad / iPhone 対応）。左右にフォルダを並べてキーボードだけでファイルを整理でき、画像の上で Enter を押せばそのまま全画面ビューワーで確認できます。テキストファイルはその場で編集でき、動画・音声の再生や印刷にも対応しています。</p>
 
 <h2>はじめに（初回起動時）</h2>
 <ol>
@@ -34,10 +34,12 @@
   <li><code>↑↓</code> カーソル移動 / <code>←→</code> 反対ペインへ・親フォルダへ / <code>Enter</code> 開く（画像はビューワー、zipは中身表示）</li>
   <li><code>Space</code> マーク / <code>C</code> コピー / <code>M</code> 移動 / <code>D</code> ゴミ箱 / <code>R</code> 名前変更 / <code>K</code> フォルダ作成</li>
   <li><code>1〜9</code> お気に入りフォルダへジャンプ（<code>Shift+数字</code>で現在のフォルダを登録、<code>B</code>で一覧）</li>
-  <li><code>P</code> ZIP圧縮 / <code>U</code> 解凍（どちらも反対ペインに出力） / <code>Shift+R</code> 一括リネーム / <code>E</code> ファイル名検索</li>
+  <li><code>P</code> ZIP圧縮 / <code>U</code> 解凍（どちらも反対ペインに出力） / <code>Shift+R</code> 一括リネーム / <code>G</code> ファイル名検索</li>
+  <li><code>E</code> テキストファイルを内蔵エディタで編集（<code>⌘S</code> 上書き保存 / <code>Esc</code> 閉じる）</li>
   <li><code>F</code> 絞り込み / <code>S</code> ソート切替 / <code>L</code> ドライブ選択 / <code>⌘[</code> <code>⌘]</code> 履歴の戻る・進む</li>
-  <li>ビューワー内: <code>←→</code> 前後の画像 / <code>R</code> 回転 / <code>Enter</code> または <code>Esc</code> で閉じる</li>
+  <li>ビューワー内: <code>←→</code> 前後の画像 / <code>R</code> 回転 / <code>+−</code> ズーム / <code>P</code> 印刷 / <code>E</code> テキストを編集 / <code>Enter</code> または <code>Esc</code> で閉じる</li>
 </ul>
+<p>※ バージョン 1.1 で、ファイル名検索のキーは <code>E</code> から <code>G</code> に変わりました（<code>E</code> はテキスト編集になりました）。</p>
 
 <h2>よくある質問</h2>
 <dl>
@@ -45,8 +47,12 @@
   <dd>A. そのフォルダにまだアクセス許可を与えていない状態です。もう一度開こうとすると表示されるフォルダ選択画面で、そのまま「このフォルダを許可」を押してください。上の階層（ホームフォルダやドライブ全体）を選んで許可すると、その中すべてが一度に使えるようになります。</dd>
   <dt>Q. 外付けSSDの許可は毎回必要ですか？</dt>
   <dd>A. いいえ、ドライブごとに初回の1回だけです。許可はお使いのMacの中に保存され、次回起動時から自動で復元されます。</dd>
-  <dt>Q. RAW（CR3）の表示に対応していますか？</dt>
-  <dd>A. Canon CR3 の表示に対応しています。埋め込みプレビューを利用した高速表示のため、現像処理を待たずに確認できます。jpg / heic / png / gif / tiff / bmp / webp にも対応しています。</dd>
+  <dt>Q. RAWの表示に対応していますか？</dt>
+  <dd>A. 主要メーカーのRAW（Canon CR3/CR2、Sony ARW、Nikon NEF、FUJIFILM RAF、OM ORF、Panasonic RW2、PENTAX、Leica、DNG など）の表示に対応しています。埋め込みプレビューを利用した高速表示のため、現像処理を待たずに確認できます。jpg / heic / png / gif / tiff / bmp / webp にも対応しています。</dd>
+  <dt>Q. 動画や音声も再生できますか？</dt>
+  <dd>A. mp4 / mov / m4v の動画と、wav / mp3 / m4a などの音声を内蔵ビューワーで再生できます。連続再生や、動画のコマを静止画として保存する機能もあります。</dd>
+  <dt>Q. テキストファイルの編集はできますか？</dt>
+  <dd>A. txt / md / csv / log / json などのテキストファイルは、<code>E</code> キー（iPad/iPhoneでは長押しメニューの「編集」）でそのまま内蔵エディタが開きます。読み込んだ文字コード（UTF-8 / Shift-JIS）を保ったまま上書き保存します。</dd>
   <dt>Q. ZIPの解凍先はどこですか？</dt>
   <dd>A. 反対側ペインで開いているフォルダに展開されます。圧縮（P）も同様に反対ペインへ出力します。解凍前に Enter でZIPの中身を確認できます。</dd>
   <dt>Q. 一括リネームの使い方は？</dt>
